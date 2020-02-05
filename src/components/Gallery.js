@@ -1,9 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { useLoadData } from "../hooks/useLoadData";
-import { filter } from "../utils/filter";
 import Tile from "./Tile";
-import { SectionTitle } from "../shared-styles/SectionTitle";
 
 const Gallery = ({ places }) => {
   return (
