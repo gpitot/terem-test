@@ -10,9 +10,10 @@ const filter = (query, data) => {
   const loweredQuery = query.toLowerCase();
   const filtered = [];
   for (let i = 0; i < data.length; i += 1) {
-    if (isValid(loweredQuery, data[i])) {
-      filtered.push(data[i]);
-    }
+    filtered.push({
+      ...data[i],
+      visible: isValid(loweredQuery, data[i])
+    });
   }
   return filtered;
 };

@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-const Tile = ({ title, img, location }) => {
+const Tile = ({ visible, title, img, location }) => {
   return (
-    <TileArea>
+    <TileArea visible={visible}>
       <Image src={img} />
       <Title>{title}</Title>
       <Location>{location}</Location>
@@ -15,6 +15,7 @@ const TileArea = styled.div`
   flex-shrink: 0;
   flex-grow: 0;
   margin: 10px;
+  display: ${props => (props.visible ? "block" : "none")};
 `;
 const Image = styled.img`
   display: block;
