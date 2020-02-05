@@ -15,6 +15,11 @@ const SearchBar = ({ query, setQuery }) => {
 
 const SearchArea = styled.div``;
 
-const Search = styled.input``;
+const Search = styled.input`
+    padding:12px 8px;
+    width:100%;
+    max-width:200px;
+    font-size:16px;
+`;
 
 export default SearchBar;
