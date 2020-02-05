@@ -41,7 +41,7 @@ const App = () => {
 
 const Article = styled.article`
   width: 100%;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 50px auto;
   background: ${props => props.theme.background};
 `;
