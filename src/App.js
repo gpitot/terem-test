@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled, { ThemeProvider } from "styled-components";
-import Gallery from "./components/Gallery";
+import Album from "./components/Album";
 import SearchBar from "./components/SearchBar";
 
 const DEFAULT_THEMES = {
@@ -20,9 +20,19 @@ const App = () => {
       <Article>
         <SearchBar query={query} setQuery={setQuery} />
 
-        <Gallery
+
+        <Album
+          url={"http://demo3136867.mockable.io/carousel"}
+          query={query}
+          title={"Popular around you"}
+          type={"carousel"}
+        />
+
+        <Album
           url={"http://demo3136867.mockable.io/featured"}
           query={query}
+          title={"Featured"}
+          type={"gallery"}
         />
       </Article>
     </ThemeProvider>
