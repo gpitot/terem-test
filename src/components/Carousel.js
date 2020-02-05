@@ -1,31 +1,56 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
-import { useLoadData } from "../hooks/useLoadData";
-import { filter } from "../utils/filter";
 import Tile from "./Tile";
-import { SectionTitle } from "../shared-styles/SectionTitle";
 
 const Carousel = ({ places }) => {
+  const albumEl = useRef(null);
+
+  const slide = direction => {
+    const sizeOfTile = 320;
+    const nextScrollLeft = albumEl.current.scrollLeft + direction * sizeOfTile;
+    albumEl.current.scrollTo({
+      left: nextScrollLeft,
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   return (
     <Outer>
-      <TileAlbum>
-        {places.map(place => {
-          const { title } = place;
-          return <Tile key={title} {...place} />;
-        })}
-      </TileAlbum>
+      <AlbumOuter ref={albumEl}>
+        <TileAlbum>
+          {places.map(place => {
+            const { title } = place;
+            return <Tile key={title} {...place} />;
+          })}
+        </TileAlbum>
+      </AlbumOuter>
+
       <Arrows>
-        <Arrow />
-        <Arrow />
+        <Arrow
+          onClick={() => {
+            slide(-1);
+          }}
+        />
+        <Arrow
+          onClick={() => {
+            slide(1);
+          }}
+        />
       </Arrows>
     </Outer>
   );
 };
 
 const Outer = styled.div`
-  overflow: hidden;
   width: 100%;
   position: relative;
+`;
+
+const AlbumOuter = styled.div`
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 `;
 
 const TileAlbum = styled.div`
