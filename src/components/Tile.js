@@ -12,7 +12,7 @@ const Tile = ({ title, img, location }) => {
 };
 const TileArea = styled.div`
   flex-basis: 300px;
-  flex-shrink: 1;
+  flex-shrink: 0;
   flex-grow: 0;
   margin: 10px;
 `;
