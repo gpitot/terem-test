@@ -23,14 +23,14 @@ const App = () => {
         <SearchBar query={query} setQuery={setQuery} />
 
         <Album
-          url={"http://demo3136867.mockable.io/carousel"}
+          url={"https://demo3136867.mockable.io/carousel"}
           query={query}
           title={"Popular around you"}
           type={"carousel"}
         />
 
         <Album
-          url={"http://demo3136867.mockable.io/featured"}
+          url={"https://demo3136867.mockable.io/featured"}
           query={query}
           title={"Featured"}
           type={"gallery"}
