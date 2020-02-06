@@ -1,12 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
 
-html, body {
-    margin:0;
-    padding:0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background:#eee;
-    font-family: 'Roboto Mono', monospace;
-
+  background: rgb(45, 145, 178);
+  background: radial-gradient(
+    circle,
+    rgba(45, 145, 178, 1) 0%,
+    rgba(0, 42, 255, 1) 100%
+  );
+  font-family: "Roboto Mono", monospace;
 }
