@@ -65,11 +65,13 @@ const Arrows = styled.div`
   transform: translateY(-50%);
   display: flex;
   justify-content: space-between;
+  pointer-events: none;
 `;
 const Arrow = styled.div`
   width: 50px;
   height: 50px;
   background: black;
+  pointer-events: all;
 `;
 
 export default Carousel;
