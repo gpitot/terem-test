@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/terem-test/static/css/main.fa136c5f.chunk.css",
+    "main.js": "/terem-test/static/js/main.c2156b70.chunk.js",
+    "main.js.map": "/terem-test/static/js/main.c2156b70.chunk.js.map",
+    "runtime-main.js": "/terem-test/static/js/runtime-main.69278a6a.js",
+    "runtime-main.js.map": "/terem-test/static/js/runtime-main.69278a6a.js.map",
+    "static/js/2.c50976ae.chunk.js": "/terem-test/static/js/2.c50976ae.chunk.js",
+    "static/js/2.c50976ae.chunk.js.map": "/terem-test/static/js/2.c50976ae.chunk.js.map",
+    "index.html": "/terem-test/index.html",
+    "precache-manifest.e139e7653ea6ae9f2905205ee089cb31.js": "/terem-test/precache-manifest.e139e7653ea6ae9f2905205ee089cb31.js",
+    "service-worker.js": "/terem-test/service-worker.js",
+    "static/css/main.fa136c5f.chunk.css.map": "/terem-test/static/css/main.fa136c5f.chunk.css.map",
+    "static/js/2.c50976ae.chunk.js.LICENSE.txt": "/terem-test/static/js/2.c50976ae.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.69278a6a.js",
+    "static/js/2.c50976ae.chunk.js",
+    "static/css/main.fa136c5f.chunk.css",
+    "static/js/main.c2156b70.chunk.js"
+  ]
+}
