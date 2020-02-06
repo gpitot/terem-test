@@ -1,0 +1,19 @@
+#!/bin/bash
+
+GIT="https://github.com/gpitot/terem-test.git"
+# Get todays date
+NOW=$(date +"%d-%m-%Y")
+echo $NOW
+
+
+npm run build
+cd build
+git init
+git remote add origin $GIT
+git checkout -b gh-pages
+git status
+git add .
+git commit -m "build $NOW"
+git push origin head --force
+
+exit 0
