@@ -8,7 +8,7 @@ const SearchBar = ({ query, setQuery }) => {
 
   return (
     <SearchArea>
-      <Search onChange={handleChange} type="text" value={query} />
+      <Search onChange={handleChange} type="text" value={query} placeholder="Search for" />
     </SearchArea>
   );
 };
@@ -18,7 +18,7 @@ const SearchArea = styled.div``;
 const Search = styled.input`
     padding:12px 8px;
     width:100%;
-    max-width:200px;
+    max-width:240px;
     font-size:16px;
 `;
 
