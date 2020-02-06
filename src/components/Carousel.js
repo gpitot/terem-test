@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import styled from "styled-components";
 import Tile from "./Tile";
 
+import arrowImage from "../assets/images/arrow.png";
+
 const Carousel = ({ places }) => {
   const albumEl = useRef(null);
 
@@ -60,8 +62,8 @@ const TileAlbum = styled.div`
 const Arrows = styled.div`
   position: absolute;
   top: 150px;
-  left: 0;
-  width: 100%;
+  left: -15px;
+  width: calc(100% + 30px);
   transform: translateY(-50%);
   display: flex;
   justify-content: space-between;
@@ -70,8 +72,16 @@ const Arrows = styled.div`
 const Arrow = styled.div`
   width: 50px;
   height: 50px;
-  background: black;
   pointer-events: all;
+  background-image: url(${arrowImage});
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  &:last-child {
+    transform: rotate(180deg);
+  }
 `;
 
 export default Carousel;
