@@ -3,6 +3,8 @@ import styled, { ThemeProvider } from "styled-components";
 import Album from "./components/Album";
 import SearchBar from "./components/SearchBar";
 
+import "./shared-styles/index.css";
+
 const DEFAULT_THEMES = {
   light: {
     background: "#fff"
@@ -19,7 +21,6 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <Article>
         <SearchBar query={query} setQuery={setQuery} />
-
 
         <Album
           url={"http://demo3136867.mockable.io/carousel"}
@@ -43,6 +44,9 @@ const Article = styled.article`
   width: 100%;
   max-width: 1280px;
   margin: 50px auto;
+  padding: 24px;
+  box-shadow: 0 2px 2px 3px #0000002e;
+  border-radius: 12px;
   background: ${props => props.theme.background};
 `;
 
