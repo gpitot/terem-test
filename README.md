@@ -7,3 +7,6 @@ nvm use
 npm i
 npm start
 
+
+# deploy
+npm run deploy
